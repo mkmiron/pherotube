@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PHero Tube</title>
+    <link rel="icon" type="image/x-icon" href="img/fav.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="header py-[30px]">
+      <div class="container">
+        <div class="flex justify-between items-center">
+          <div class="w-1/2">
+            <a href="index.html" class="flex justify-start items-center gap-2">
+              <img src="img/Logo.png" alt="" />
+            </a>
+          </div>
+          <div class="w-1/2">
+            <div href="#" class="flex justify-end items-center gap-2">
+              <a
+                href="./index.html"
+                class="btn transition duration-[300] py-[10px] px-[20px] rounded-[4px] bg-[#FF1F3D] hover:bg-[#FE7436] text-white font-medium"
+                >Home</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="blog">
+      <div class="container">
+        <hr class="mb-[32px]"/>
+        <div class="blog mb-6">
+          <h2
+            class="question bg-[#3BB9FF] text-white rounded-[4px] text-xl mb-3 font-bold p-3">
+            Discuss the scope of var, let, and const
+          </h2>
+          <p>
+            JavaScript variables, declared with var, let, and const, have
+            distinct scopes and behaviors. var has function scope, permitting
+            visibility within functions or globally, with hoisting and
+            re-declaration capabilities. In contrast, let and const introduce
+            block-scoping, confining variables to their respective blocks and
+            discouraging hoisting. let allows reassignment, while const enforces
+            constant values after initialization.
+            <br/>
+            In modern JavaScript, it's recommended to use let for reassignable
+            variables and const for constants to enhance code clarity and
+            reliability. Understanding these scoping rules is pivotal for
+            writing robust JavaScript applications.
+          </p>
+        </div>
+        <div class="blog mb-6">
+          <h2
+            class="question bg-[#3BB9FF] text-white rounded-[4px] text-xl mb-3 font-bold p-3">
+            Tell us the use cases of null and undefined
+          </h2>
+          <p>
+            null serves as a deliberate indicator of the absence of a value
+            within JavaScript. It's commonly utilized when you want to
+            explicitly communicate that a variable or property does not contain
+            a meaningful value. For example, you might assign null to a variable
+            at its initialization to convey that it's meant to eventually hold
+            an object but currently lacks a valid object to assign. This can be
+            especially useful for indicating intentional emptiness in your code,
+            allowing for clearer communication of your intentions.
+            <br/>
+            On the other hand, undefined represents variables or properties that
+            have been declared but have not yet been assigned a value. It often
+            acts as a default state, such as when function parameters are left
+            undefined because no argument was provided during a function call.
+            undefined can also signify missing object properties or the outcome
+            of expressions that do not return a value. It's a common indicator
+            of coding errors or uninitialized variables, helping developers
+            identify issues within their code and ensure proper variable
+            assignment and initialization.
+          </p>
+        </div>
+        <div class="blog mb-6">
+          <h2
+            class="question bg-[#3BB9FF] text-white rounded-[4px] text-xl mb-3 font-bold p-3">
+          What do you mean by REST API?
+          </h2>
+          <p>
+            A REST API, or simply a RESTful API, is a way for software applications to talk to each other over the internet. It uses a set of rules and URLs to access and exchange data, making it a standard method for sharing information between different programs on the web.
+          </p>
+        </div>
+      </div>
+    </section>
+    <script src="script/pherotube.js"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pHero Tube</title>
+    <link rel="icon" type="image/x-icon" href="img/fav.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="header py-[30px]">
+      <div class="container">
+        <div class="flex flex-wrap justify-between items-center">
+            <div class="md:w-1/3 w-full">
+                <a href="index.html" class="flex justify-start items-center gap-2">
+                    <img src="img/Logo.png" alt="">
+                </a>
+            </div>
+            <div class="md:w-1/3 w-1/2">
+                <div class="flex md:justify-center justify-start items-center gap-2">
+                    <button id="sorter" class="btn transition duration-[300] py-[10px] px-[20px] rounded-[4px] bg-[#d3d3d3] hover:bg-[#e4e4e4] font-medium">Sort by view</button>
+                </div>
+            </div>
+            <div class="md:w-1/3 w-1/2">
+                <div href="#" class="flex justify-end items-center gap-2">
+                    <a href="./blog.html" class="btn transition duration-[300] py-[10px] px-[20px] rounded-[4px] bg-[#FF1F3D] hover:bg-[#FE7436] text-white font-medium">Blog</a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </header>
+    <main>
+        <div class="container">
+            <hr class="mb-[30px]">
+            <section class="categories" id="categories"></section>
+            <section class="videos py-[40px]" id="videos"></section>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="script/pherotube.js"></script> 
+</body>
+</html>
